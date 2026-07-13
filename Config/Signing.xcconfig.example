@@ -1,0 +1,11 @@
+// Copy this file to Config/Signing.local.xcconfig and set local values.
+// Signing.local.xcconfig is intentionally ignored by git.
+
+SWIFT_WDA_DEVELOPMENT_TEAM = YOURTEAMID
+SWIFT_WDA_BUNDLE_PREFIX = com.example.swiftwda
+
+SWIFT_WDA_INTEGRATION_APP_BUNDLE_ID = $(SWIFT_WDA_BUNDLE_PREFIX).IntegrationApp
+SWIFT_WDA_RUNNER_BUNDLE_ID = $(SWIFT_WDA_BUNDLE_PREFIX).WebDriverAgentRunner
+WDA_PRODUCT_BUNDLE_IDENTIFIER = $(SWIFT_WDA_RUNNER_BUNDLE_ID)
+
+CODE_SIGN_STYLE = Automatic

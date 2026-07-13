@@ -1,0 +1,25 @@
+name: Release Check
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  release-check:
+    runs-on: macos-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Public readiness
+        run: bash scripts/check-public-ready.sh
+
+      - name: Documentation
+        run: bash scripts/check-docs.sh
+
+      - name: Build without signing
+        run: bash scripts/build-for-testing.sh

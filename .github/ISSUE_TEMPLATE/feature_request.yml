@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest an endpoint, compatibility improvement, or operational feature.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Need
+      description: What workflow does this unblock?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the API, behavior, or documentation change.
+    validations:
+      required: true
+  - type: textarea
+    id: compatibility
+    attributes:
+      label: Compatibility impact
+      description: Does this affect existing WebDriverAgent-style clients?
