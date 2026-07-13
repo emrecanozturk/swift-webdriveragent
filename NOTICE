@@ -1,0 +1,5 @@
+SwiftWDA is an independent Swift XCTest runner.
+
+This project is not affiliated with Apple, Meta, Facebook, Appium, or upstream
+WebDriverAgent. Product names and project names are used only to describe
+compatibility expectations.

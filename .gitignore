@@ -1,0 +1,14 @@
+.DS_Store
+DerivedData/
+build/
+.build/
+*.xcresult
+*.ipa
+*.app.dSYM
+*.mobileprovision
+*.cer
+*.p12
+*.xcuserstate
+xcuserdata/
+Config/Signing.local.xcconfig
+wiki-worktree/
